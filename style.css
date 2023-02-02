@@ -1,0 +1,48 @@
+body {
+        /* background-color: azure; */
+        background: rgb(27, 65, 159);
+        background: linear-gradient(90deg, rgba(27, 65, 159, 0.7736344537815126) 12%, rgba(27, 139, 159, 0.9360994397759104) 37%, rgba(0, 212, 255, 0.17979691876750703) 100%);
+}
+
+.font-medi {
+        font-size: 30px;
+        padding-top: 20px;
+        font-family: 'Playfair Display', serif;
+        color: rgb(11, 82, 82);
+}
+
+.font-virtual {
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Red Hat Display', sans-serif;
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+        text-shadow: whitesmoke;
+}
+
+.footer {
+        text-align: center;
+}
+
+.container {
+        display: flex;
+        align-items: right;
+        justify-content: left;
+}
+
+.img {
+        max-width: 100%;
+        max-height: 100%;
+}
+
+.text {
+        font-size: 25px;
+        line-height: 50px;
+        text-shadow: wheat;
+        font-family: 'Kaushan Script', cursive;
+
+}
+
+footer {
+        color: rgb(14, 9, 5)
+}
