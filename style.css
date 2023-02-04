@@ -65,4 +65,38 @@ footer {
 .skill {
         font-family: 'Playfair Display', serif;
         font-size: larger;
+        text-decoration: underline;
+}
+
+figcaption {
+        font-family: 'Dosis', sans-serif;
+}
+
+.explore {
+        font-size: 30px;
+        /* font-family: 'Playfair Display', serif; */
+        font-family: 'Dosis', sans-serif;
+        border: 2px solid rgb(20, 20, 52);
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: rgb(7, 78, 69);
+        color: white;
+}
+
+.explore-item {
+        width: 80px;
+        height: 80px;
+}
+
+.figcaption-text {
+        font-family: 'Dosis', sans-serif;
+        font-size: 25px;
+        color: black;
+}
+
+.figcaption-text:hover {
+        color: rgb(48, 19, 65);
+        position: relative;
+        top: 2px;
+
 }
