@@ -61,3 +61,8 @@ body {
 footer {
         color: rgb(14, 9, 5);
 }
+
+.skill {
+        font-family: 'Playfair Display', serif;
+        font-size: larger;
+}
