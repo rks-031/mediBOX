@@ -1,217 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mediBOX</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="images/favicon-96x96.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Red+Hat+Display&family=Sassy+Frass&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>Bootstrap 5 multilevel dropdown submenu</title>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+          crossorigin="anonymous"
+        ></script>
+        <style type="text/css">
+          .dropdown-menu li {
+            position: relative;
+          }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mediBOX</title>
-  <link rel="shortcut icon" type="image/jpg" href="images/favicon-96x96.png" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Red+Hat+Display&family=Sassy+Frass&display=swap"
-    rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Kaushan+Script&display=swap" rel="stylesheet">
-</head>
+          .dropdown-menu .submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -7px;
+          }
 
-<body>
-  
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand text-white" href="#">
-      <img src="images/apple-icon-72x72.png" width="30" height="30" class="d-inline-block align-top" alt="" />
-      mediBOX
-    </a>
-    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse text-white" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#" target="_blank">Home<span class="sr-only">(current)</span></a>
-        </li>
+          .dropdown-menu > li:hover > .submenu {
+            display: block;
+          }
 
+          .dropdown-menu .submenu-left {
+            right: 100%;
+            left: auto;
+          }
 
-        <li class="nav-item dropdown text-white">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-            Discover
-          </a>     
- 
-          <div class="dropdown-menu dropright text-white">
-            <a class="nav-link dropdown-toggle bg-dark " href="#" role="button" data-toggle="dropdown"
-              aria-expanded="false">
-              Wellness Topics
-            </a>
-            <div class="dropdown-menu text-white">
-              <a class="dropdown-item text-white bg-dark" href="#">Nutrition</a>
-              <a class="dropdown-item text-white bg-dark" href="#">Fitness</a>
-              <a class="dropdown-item text-white bg-dark" href="#">Skin Care</a>
-              <a class="dropdown-item text-white bg-dark" href="#">Sexual health</a>
-              <a class="dropdown-item text-white bg-dark" href="#">Women's Health</a>
-              <a class="dropdown-item text-white bg-dark" href="#">Mental Well-being</a>
-              <a class="dropdown-item text-white bg-dark" href="#">Sleep</a>
-            </div>
+          @media only screen and (max-width: 800px) {
+            .dropdown-menu .submenu {
+              left: 25%;
+              top: 0px;
+            }
+            .dropdown-menu .multi-menu {
+              left: 95%;
+            }
+            .dropdown-menu .submenu-left {
+              left: 50%;
+            }
+          }
+        </style>
+      </head>
 
-
-            <a class="nav-link dropdown-toggle bg-dark" href="#" role="button" data-toggle="dropdown"
-              aria-expanded="false">
-              Medi-products reviews
-            </a>
-            <div class="dropdown-menu text-white">
-              <a class="dropdown-item text-white bg-dark" href="#">Vitamins & Supplements</a>
-              <a class="dropdown-item text-white bg-dark" href="#">Sleep</a>
-              <a class="dropdown-item text-white bg-dark" href="#">Mental Health</a>
-              <a class="dropdown-item text-white bg-dark" href="#">Nutrition</a>
-              <a class="dropdown-item text-white bg-dark" href="#">At Home Testing</a>
-              <a class="dropdown-item text-white bg-dark" href="#">CBD</a>
-              <a class="dropdown-item text-white bg-dark" href="#">Men's Health</a>
-            </div>
-
-            <a class="nav-link dropdown-toggle bg-dark" href="#" role="button" data-toggle="dropdown"
-              aria-expanded="false">
-              Covid-19
-            </a>
-            <div class="dropdown-menu text-white">
-              <a class="dropdown-item text-white bg-dark" href="https://www.cowin.gov.in/">Cowin</a>
-              <a class="dropdown-item text-white bg-dark" href="https://www.mohfw.gov.in/">MOHFW</a>
-
-            </div>
-
-          </div>
-        </li>
-
-        <li class="nav-item text-white">
-          <a class="nav-link" href="index2.html">About Us</a>
-        </li>
-
-        <li class="nav-item dropdown text-white">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-            More
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+          <a class="navbar-brand text-white" href="#">
+            <img
+              src="images/apple-icon-72x72.png"
+              width="30"
+              height="30"
+              class="d-inline-block align-top"
+              alt=""
+            />
+            mediBOX
           </a>
-          <div class="dropdown-menu text-white">
-            <a class="dropdown-item text-white bg-dark"
-              href="https://www.google.com/search?q=nearby+hospitals&oq=nearby+hospitals&aqs=chrome..69i57j0i512l5j0i22i30j0i390l2.4907j0j9&sourceid=chrome&ie=UTF-8"
-              target="_blank">Nearby Hospitals</a>
-            <a class="dropdown-item text-white bg-dark" href="#">Progress Report</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a href="" class="nav-link"
+                  >Home<span class="sr-only"></span
+                ></a>
+              </li>
+              <!-- <li class="nav-item">
+                            <a href="" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contact Us</a>
+                        </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  href=""
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Discover</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="" class="dropdown-item text-white bg-dark"
+                      >Wellness Topics &raquo;</a
+                    >
+                    <ul class="dropdown-menu submenu">
+                      <li>
+                        <a href="" class="dropdown-item text-white bg-dark"
+                          >Nutrition</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item text-white bg-dark"
+                          >Fitness</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item text-white bg-dark"
+                          >Skin Care</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item text-white bg-dark"
+                          >Sexual health</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item text-white bg-dark"
+                          >Women's Health</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item text-white bg-dark"
+                          >Mental Well-being</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item text-white bg-dark"
+                          >Sleep</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item text-white bg-dark"
+                      >Medi-products reviews &raquo;</a
+                    >
+                    <ul class="dropdown-menu submenu">
+                      <li>
+                        <a href="" class="dropdown-item text-white bg-dark"
+                          >Vitamins & Supplements</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item text-white bg-dark"
+                          >Sleep</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item text-white bg-dark"
+                          >Mental Health</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item text-white bg-dark"
+                          >Nutrition</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item text-white bg-dark"
+                          >At Home Testing</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item text-white bg-dark"
+                          >CBD</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item text-white bg-dark"
+                          >Men's Health</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item text-white bg-dark"
+                      >Covid-19 &raquo;</a
+                    >
+                    <ul class="dropdown-menu submenu">
+                      <li>
+                        <a
+                          href="https://www.cowin.gov.in/"
+                          class="dropdown-item text-white bg-dark"
+                          >Cowin</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.mohfw.gov.in/"
+                          class="dropdown-item text-white bg-dark"
+                          >MOHFW</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item text-white">
+                <a class="nav-link" href="index2.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown text-white">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More
+                </a>
+                <div class="dropdown-menu text-white">
+                  <a
+                    class="dropdown-item text-white bg-dark"
+                    href="https://www.google.com/search?q=nearby+hospitals&oq=nearby+hospitals&aqs=chrome..69i57j0i512l5j0i22i30j0i390l2.4907j0j9&sourceid=chrome&ie=UTF-8"
+                    target="_blank"
+                    >Nearby Hospitals</a
+                  >
+                  <a class="dropdown-item text-white bg-dark" href="#"
+                    >Progress Report</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item text-white">
+                <a class="nav-link" href="index1.html" target="_blank">LOGIN</a>
+              </li>
+            </ul>
           </div>
-        </li>
 
-        <li class="nav-item text-white">
-          <a class="nav-link" href="index1.html" target="_blank">LOGIN</a>
-        </li>
-        </li>
-      </ul>
+          <!-- <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">More Item</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown Right</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="" class="dropdown-item">DropdownItem 1</a></li>
+                                <li><a href="" class="dropdown-item">DropdownItem 2 &raquo;</a>
+                                    <ul class="dropdown-menu submenu submenu-left">
+                                        <li><a href="" class="dropdown-item">SubmenuItem 1</a></li>
+                                        <li><a href="" class="dropdown-item">SubmenuItem 2</a></li>
+                                        <li><a href="" class="dropdown-item">SubmenuItem 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul> -->
+
+          <form class="d-flex">
+            <input
+              class="form-control mr-sm-2 me-2"
+              type="search"
+              placeholder="Enter your query"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </nav>
+      </body>
+    </html>
+    <div class="container">
+      <p class="text-center font-weight-bold col-12 text-wrap font-medi">
+        mediBOX
+      </p>
+      <img
+        src="images/android-icon-192x192.png"
+        class="rounded mx-auto d-block"
+      />
+      <p class="font-virtual">Your own Personalized Virtual Hospital</p>
+      <hr />
+      <div class="container1">
+        <div>
+          <img src="images/ability_img.png" class="rounded float-left img1" />
+        </div>
+        <div>
+          <ul class="text">
+            <li>
+              An online platform for patients, healthcare providers, and other
+              stakeholders to access information and resources related to
+              healthcare.
+            </li>
+            <br />
+            <li>Increased accessibility</li>
+            <li>Improved Patient Engagement</li>
+            <li>Better Communication with Healthcare Providers</li>
+            <li>Enhanced Patient Experience</li>
+            <li>Increased Efficiency and Cost Savings</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <!-- middle text ends here -->
+
+      <!-- skills used  -->
+      <p class="text-center font-weight-bold skill">Skills Used</p>
+      <div class="d-flex align-items-center justify-content-center">
+        <img src="logos/icons8-html-5-144.png" class="img-fluid" />(HTML)
+        <img src="logos/css3.png" class="img-fluid" />(CSS)
+        <img
+          src="logos/icons8-javascript-144.png"
+          class="img-fluid"
+        />(JavaScript)
+        <img src="logos/icons8-python-144.png" class="img-fluid" />(Python)
+      </div>
+      <hr />
+
+      <!-- footer -->
+      <footer class="footer">&copy; mediBOX.com | All rights reserved.</footer>
+      <hr />
     </div>
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Enter your query" aria-label="Search" />
-      <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
-        Search
-      </button>
-    </form>
-  </nav>
-  <!-- navbar ends here -->
-  <div class="container">
-  <p class="text-center font-weight-bold col-12 text-wrap font-medi">mediBOX</p>
-  <img src="images/android-icon-192x192.png" class="rounded mx-auto d-block" />
-  <p class="font-virtual">Your own Personalized Virtual Hospital</p>
-  <hr>
-  <div class="container1">
-    <div>
-      <img src="images/ability_img.png" class="rounded float-left img1" />
-    </div>
-    <div>
-      <ul class="text">
-        <li>An online platform for patients, healthcare providers, and other stakeholders to access information and
-          resources related to healthcare. </li><br>
-        <li>Increased accessibility</li>
-        <li>Improved Patient Engagement</li>
-        <li>Better Communication with Healthcare Providers</li>
-        <li>Enhanced Patient Experience</li>
-        <li>Increased Efficiency and Cost Savings</li>
-      </ul>
-    </div>
-  </div>
-  <hr>
-  <!-- middle text ends here -->
-  <p class="text-center font-weight-normal ">
-    <button class="explore">Explore the Vitals</button></p>
-  <br>
-  <div class="d-flex align-items-center justify-content-center ">
-  <figure class="figure">
-    <img src="logos/icons8-fit-50.png" class="img-fluid mx-xl-5 explore-item">
-    <figcaption class="text-center my-2 ">
-      <a href="#" class="figcaption-text" style="font-size: 1vw;">Fitness</a>
-      </figcaption>
-  </figure>
-  <figure class="figure">
-    <img src="logos/icons8-mental-health-64.png" class="img-fluid mx-xl-5 explore-item">
-    <figcaption class="text-center my-2 ">
-      <a href="#" class="figcaption-text" style="font-size: 1vw;">Mental Health</a>
-    </figcaption>
-  </figure>
-  <figure class="figure">
-    <img src="logos/icons8-nutrition-60.png" class="img-fluid mx-xl-5 explore-item">
-    <figcaption class="text-center my-2 ">
-      <a href="#" class="figcaption-text" style="font-size: 1vw;">Nutrition</a>
-    </figcaption>
-  </figure>
-  <figure class="figure">
-    <img src="logos/icons8-pregnancy-64.png" class="img-fluid mx-xl-5 explore-item">
-    <figcaption class="text-center my-2 ">
-      <a href="#" class="figcaption-text" style="font-size: 1vw;">Women Health</a>
-      </figcaption>
-  </figure>
-</div>
-  <hr>
-  <!-- another middle text -->
-  
-  <!-- skills used  -->
-  <p class="text-center font-weight-normal ">
-    <button class="explore">Skills Used</button></p>
 
-  <div class="d-flex align-items-center justify-content-center ">
-  <figure class="figure">
-  <img src="logos/icons8-html-5-144.png" class="img-fluid mx-xl-4">
-  <figcaption class="text-center">HTML</figcaption></figure>
-
-  <figure class="figure">
-  <img src="logos/css3.png" class="img-fluid mx-xl-4">
-  <figcaption class="text-center">CSS</figcaption></figure>
-
-  <figure class="figure">
-  <img src="logos/icons8-javascript-144.png" class="img-fluid mx-xl-4">
-  <figcaption class="text-center">Javascript</figcaption></figure>
-
-  <figure class="figure">
-  <img src="logos/icons8-python-144.png" class="img-fluid mx-xl-4">
-  <figcaption class="text-center">Python</figcaption></figure>
-
-  <figure class="figure">
-  <img src="logos/icons8-flask-144.png" class="img-fluid mx-xl-4">
-  <figcaption class="text-center">Flask</figcaption></figure>
-  </div>
-  <hr>
-  <!-- skills used end -->
-</div>
-  <!-- footer -->
-  <footer class="footer">&copy; mediBOX.com | All rights reserved.</footer>
-  <!-- footer ends -->
-  
-  <hr>
-  <script src=" https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-    crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src=" https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
