@@ -65,43 +65,58 @@ footer {
 .skill {
         font-family: 'Playfair Display', serif;
         font-size: larger;
-        text-decoration: underline;
 }
 
-figcaption {
-        font-family: 'Dosis', sans-serif;
-}
 
-.explore {
-        font-size: 30px;
-        /* font-family: 'Playfair Display', serif; */
-        font-family: 'Dosis', sans-serif;
-        border: 2px solid rgb(20, 20, 52);
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        background-color: rgb(7, 78, 69);
-        color: white;
-}
 
-.explore-item {
-        width: 80px;
-        height: 80px;
-}
 
-.figcaption-text {
-        font-family: 'Dosis', sans-serif;
-        font-size: 25px;
-        color: black;
-}
-
-.figcaption-text:hover {
-        color: rgb(48, 19, 65);
+.dropdown-menu li {
         position: relative;
-        top: 2px;
-
 }
 
-.l1 {
+.dropdown-menu .submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+}
+
+.dropdown-menu>li:hover>.submenu {
+        display: block;
+}
+
+.dropdown-menu .submenu-left {
+        right: 100%;
+        left: auto;
+}
+
+@media only screen and (max-width:800px) {
+        .dropdown-menu .submenu {
+                left: 25%;
+                top: 0px;
+        }
+
+        .dropdown-menu .multi-menu {
+                left: 95%;
+        }
+
+        .dropdown-menu .submenu-left {
+                left: 50%;
+        }
+}
+
+
+h1 {
+        /* height: 20px;
+        width: 20px; */
+        text-align: center;
+        color: rgb(241, 241, 224);
+        margin-top: 50px;
+        font-style: oblique;
+        margin-bottom: 50px;
+}
+
+/* .l1 {
         display: inline-block;
         margin-left: 50px;
         margin-bottom: 50px;
@@ -111,25 +126,13 @@ figcaption {
         height: 40px;
         width: 40px;
         margin-bottom: 20px;
-        /* position: absolute;
-        animation-name: moving;
-        animation-duration: 4s;
-        animation-delay: 2s; */
-}
-
-/* @keyframes moving {
-        0% {
-                background-color: red;
-                left: 0px;
-                top: 0px;
-        }
-
-        25% {
-                background-color: yellow;
-                left: 200px;
-                top: 0px;
-        }
 } */
+
+/* hr {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(241, 241, 224);
+}
 
 .p1 {
         font-size: 20px;
@@ -138,13 +141,4 @@ figcaption {
 #i1 {
         margin-bottom: 15px;
 
-}
-
-h1 {
-
-        text-align: center;
-        color: rgb(241, 241, 224);
-        margin-top: 50px;
-        font-style: oblique;
-        margin-bottom: 50px;
-}
+} */
