@@ -26,7 +26,26 @@
   </head>
 
   <body class="h-100">
+    <div>
+      <a
+        href="index.html"
+        type="button"
+        class="btn btn-primary m-2"
+        role="group"
+        id="back"
+        >Back to Home</a
+      >
+    </div>
     <div class="container h-100">
+      <!-- <div id="white-background"></div>
+      <div id="dlgbox">
+        <div id="dlg-header">Please Confirm</div>
+        <div id="dlg-body">Do you want to continue?</div>
+        <div id="dlg-footer">
+          <button onclick="dlgOK()">OK</button>
+          <button onclick="dlgCancel()">Cancel</button>
+        </div>
+      </div> -->
       <div class="row h-100 justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
           <!-- Form -->
@@ -104,7 +123,11 @@
                   >
                 </div>
                 <br />
-                <button type="submit" class="btn btn-primary">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  onclick="showDialog()"
+                >
                   <a
                     href="C:\Users\Rajnish Kumar Singh\OneDrive - iiit-bh.ac.in\Desktop\adv-hck"
                   ></a>
@@ -131,5 +154,37 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function dlgCancel() {
+        dlgHide();
+        document.getElementsByTagName("H1")[0].innerHTML =
+          "You clicked Cancel.";
+      }
+
+      function dlgOK() {
+        dlgHide();
+        document.getElementsByTagName("H1")[0].innerHTML = "You clicked OK.";
+      }
+
+      function dlgHide() {
+        var whitebg = document.getElementById("white-background");
+        var dlg = document.getElementById("dlgbox");
+        whitebg.style.display = "none";
+        dlg.style.display = "none";
+      }
+
+      function showDialog() {
+        var whitebg = document.getElementById("white-background");
+        var dlg = document.getElementById("dlgbox");
+        whitebg.style.display = "block";
+        dlg.style.display = "block";
+
+        var winWidth = window.innerWidth;
+
+        dlg.style.left = winWidth / 2 - 480 / 2 + "px";
+        dlg.style.top = "150px";
+      }
+    </script>
   </body>
 </html>

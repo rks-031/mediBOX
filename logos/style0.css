@@ -1,0 +1,144 @@
+body {
+        background: rgb(27, 65, 159);
+        background: linear-gradient(90deg, rgba(27, 65, 159, 0.7736344537815126) 12%, rgba(27, 139, 159, 0.9360994397759104) 37%, rgba(0, 212, 255, 0.17979691876750703) 100%);
+}
+
+
+
+.font-medi {
+        font-size: 30px;
+        padding-top: 20px;
+        font-family: 'Playfair Display', serif;
+        color: rgb(11, 82, 82);
+}
+
+.font-virtual {
+        font-family: 'Red Hat Display', sans-serif;
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+        text-shadow: whitesmoke;
+}
+
+.footer {
+        text-align: center;
+}
+
+.container1 {
+        display: flex;
+        align-items: right;
+        justify-content: left;
+}
+
+.container2 {
+        display: flex;
+        align-items: left;
+        justify-content: right;
+        margin: -80px;
+        font-family: 'Playfair Display', serif;
+}
+
+.img1 {
+        max-width: 100%;
+        max-height: 100%;
+}
+
+.img2 {
+        max-width: 150%;
+        max-height: 150%;
+        margin: -40px;
+}
+
+.text {
+        font-size: 25px;
+        line-height: 50px;
+        text-shadow: wheat;
+        font-family: 'Kaushan Script', cursive;
+
+}
+
+
+footer {
+        color: rgb(14, 9, 5);
+}
+
+.skill {
+        font-family: 'Playfair Display', serif;
+        font-size: larger;
+}
+
+
+
+
+.dropdown-menu li {
+        position: relative;
+}
+
+.dropdown-menu .submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+}
+
+.dropdown-menu>li:hover>.submenu {
+        display: block;
+}
+
+.dropdown-menu .submenu-left {
+        right: 100%;
+        left: auto;
+}
+
+@media only screen and (max-width:800px) {
+        .dropdown-menu .submenu {
+                left: 25%;
+                top: 0px;
+        }
+
+        .dropdown-menu .multi-menu {
+                left: 95%;
+        }
+
+        .dropdown-menu .submenu-left {
+                left: 50%;
+        }
+}
+
+
+h1 {
+        /* height: 20px;
+        width: 20px; */
+        text-align: center;
+        color: rgb(241, 241, 224);
+        margin-top: 50px;
+        font-style: oblique;
+        margin-bottom: 50px;
+}
+
+/* .l1 {
+        display: inline-block;
+        margin-left: 50px;
+        margin-bottom: 50px;
+}
+
+.i {
+        height: 40px;
+        width: 40px;
+        margin-bottom: 20px;
+} */
+
+/* hr {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(241, 241, 224);
+}
+
+.p1 {
+        font-size: 20px;
+}
+
+#i1 {
+        margin-bottom: 15px;
+
+} */
