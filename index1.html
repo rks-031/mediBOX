@@ -24,121 +24,77 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body class="h-100">
-    <div>
-      <a
-        href="index.html"
-        type="button"
-        class="btn btn-primary m-2"
-        role="group"
-        id="back"
-        >Back to Home</a
-      >
-    </div>
     <div class="container h-100">
-      <div id="white-background"></div>
-      <div id="dlgbox">
-        <div id="dlg-header">Please Confirm</div>
-        <div id="dlg-body">Do you want to continue?</div>
-        <div id="dlg-footer">
-          <button onclick="dlgOK()">OK</button>
-          <button onclick="dlgCancel()">Cancel</button>
-        </div>
-      </div>
       <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-10 col-md-8 col-lg-6">
-          <!-- Form -->
           <div class="container2">
-            <div>
-              <p>Login and make mediBOX your new mediBUDDY</p>
-            </div>
-            <div>
+
+            <div class="login-img">
               <img
                 src="images/heart-g99955fc80_1920-removebg-preview.png"
                 class="img2"
               />
             </div>
-            <div>
-              <form method="post" action="">
-                <div class="form-group form-group-lg font-weight-bold">
-                  <label for="name">Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Enter your name"
-                  />
-                </div>
-                <div class="form-group font-weight-bold">
-                  <label for="age">Age</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="age"
-                    placeholder="Enter your age"
-                  />
-                </div>
-                <div class="form-group font-weight-bold">
-                  <label for="location">Location</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="location"
-                    placeholder="Enter your location"
-                  />
-                </div>
-                <div class="form-group font-weight-bold">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Enter email"
-                  />
-                  <small
-                    id="emailHelp"
-                    class="form-text text-muted font-weight-bold"
-                    >We'll never share your email with anyone else.</small
-                  >
-                </div>
-                <div class="form-group font-weight-bold">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                    placeholder="Enter Password"
-                  />
-                </div>
-                <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck1"
-                  />
-                  <label class="form-check-label" for="exampleCheck1"
-                    >Click the box before submission</label
-                  >
-                </div>
-                <br />
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                  onclick="showDialog()"
-                >
-                  <a
-                    href="C:\Users\Rajnish Kumar Singh\OneDrive - iiit-bh.ac.in\Desktop\adv-hck"
-                  ></a>
-                  Submit
-                </button>
-              </form>
+          <div>
+    
+    <div class="container">
+      <div class="wrapper">
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required>
+              <label>Email</label>
             </div>
-          </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required>
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox">Remember me</label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+              <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" required>
+              <label>Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required>
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required>
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox">I agree to the terms and conditions</label>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="login-register">
+              <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+            </div>
+          </form>
         </div>
       </div>
     </div>
+    <script src="index1.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script
       src=" https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -154,37 +110,5 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      function dlgCancel() {
-        dlgHide();
-        document.getElementsByTagName("H1")[0].innerHTML =
-          "You clicked Cancel.";
-      }
-
-      function dlgOK() {
-        dlgHide();
-        document.getElementsByTagName("H1")[0].innerHTML = "You clicked OK.";
-      }
-
-      function dlgHide() {
-        var whitebg = document.getElementById("white-background");
-        var dlg = document.getElementById("dlgbox");
-        whitebg.style.display = "none";
-        dlg.style.display = "none";
-      }
-
-      function showDialog() {
-        var whitebg = document.getElementById("white-background");
-        var dlg = document.getElementById("dlgbox");
-        whitebg.style.display = "block";
-        dlg.style.display = "block";
-
-        var winWidth = window.innerWidth;
-
-        dlg.style.left = winWidth / 2 - 480 / 2 + "px";
-        dlg.style.top = "550px";
-      }
-    </script>
   </body>
 </html>
