@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 body {
         background: rgb(27, 65, 159);
         background: linear-gradient(90deg, rgba(27, 65, 159, 0.7736344537815126) 12%, rgba(27, 139, 159, 0.9360994397759104) 37%, rgba(0, 212, 255, 0.17979691876750703) 100%);
@@ -28,15 +30,20 @@ body {
         display: flex;
         align-items: right;
         justify-content: left;
+
 }
 
-.container2 {
+.para-text {
+        font-family: 'Open Sans', sans-serif;
+}
+
+/* .container2 {
         display: flex;
         align-items: left;
         justify-content: right;
         margin: -80px;
         font-family: 'Playfair Display', serif;
-}
+} */
 
 .img1 {
         max-width: 100%;
@@ -50,12 +57,25 @@ body {
 }
 
 .text {
-        font-size: 25px;
+        font-size: 20px;
         line-height: 50px;
-        text-shadow: wheat;
-        font-family: 'Kaushan Script', cursive;
-
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        color: #0a1545;
+        animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
 }
+
+/* @keyframes glow {
+        from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #dfe9ef, 0 0 40px #abb6d0, 0 0 50px #d8d3eb, 0 0 60px #e0e3ef, 0 0 70px #f6f6fa;
+        }
+
+        to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #4df6ff, 0 0 40px #4db2ff, 0 0 50px #72eae6, 0 0 60px #4f9ed0, 0 0 70px #62aada, 0 0 80px #84c0e6;
+        }
+} */
 
 
 footer {
@@ -74,7 +94,6 @@ figcaption {
 
 .explore {
         font-size: 30px;
-        /* font-family: 'Playfair Display', serif; */
         font-family: 'Dosis', sans-serif;
         border: 2px solid rgb(20, 20, 52);
         border-top-right-radius: 10px;
@@ -82,6 +101,24 @@ figcaption {
         background-color: rgb(7, 78, 69);
         color: white;
 }
+
+.explore-feedback {
+        border: 1px solid black;
+        background-color: #1d0aae;
+        background-image: linear-gradient(90deg, #0e2287 0%, #2c42a1 100%);
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 5px;
+}
+
+.explore-feedback:hover {
+        color: white;
+        /* text-decoration: none; */
+        font: bold;
+}
+
 
 .explore-item {
         width: 80px;
