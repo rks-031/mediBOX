@@ -9,6 +9,21 @@ body {
         font-family: 'Oswald', sans-serif;
 }
 
+.heading {
+        text-align: center;
+        justify-content: center;
+        font-size: 2rem;
+        margin-top: 10px;
+        background: linear-gradient(90deg, #ff8a00, #e52e71);
+        font-family: 'Times New Roman', Times, serif;
+}
+
+.image {
+        height: 20%;
+        width: 20%;
+        margin: 10px;
+}
+
 .card {
         width: 18%;
         height: 300px;
@@ -33,43 +48,23 @@ body {
         transition: transform 0.5s;
 }
 
-.myth,
-.fact {
+.vitamin,
+.diseases {
         position: absolute;
         height: 100%;
         width: 100%;
         background: white;
         line-height: 45px;
-        background: linear-gradient(to right, #8e0e00, #1f1c18);
-        font-size: 20px;
+        background: #0f0c29;
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        font-size: 22px;
         border-radius: 5px;
         backface-visibility: hidden;
 }
 
-.fact {
-        background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(14, 174, 87, 1) 0%, rgba(12, 116, 117, 1) 90%);
+.diseases {
+        background: linear-gradient(to right, #000000, #0f9b0f);
         color: white;
         transform: rotateY(180deg);
         line-height: 45px;
-}
-
-footer {
-        text-align: center;
-        font-family: 'Playfair Display', serif;
-        font-weight: bold;
-}
-
-.heading {
-        text-align: center;
-        justify-content: center;
-        font-size: 2rem;
-        margin-top: 10px;
-        background: linear-gradient(90deg, #ff8a00, #e52e71);
-        font-family: 'Times New Roman', Times, serif;
-}
-
-.image {
-        height: 20%;
-        width: 20%;
-        margin: 10px;
 }
