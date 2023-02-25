@@ -45,14 +45,14 @@ body {
         width: 100%;
         background: white;
         line-height: 45px;
-        background-color: #AA0000;
+        background-color: #B31B1B;
         font-size: 20px;
         border-radius: 5px;
         backface-visibility: hidden;
 }
 
 .fact {
-        background-color: #03C03C;
+        background-color: #32CD32;
         color: white;
         transform: rotateY(180deg);
         line-height: 45px;
