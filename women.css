@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 body {
         padding: 0;
@@ -9,9 +9,24 @@ body {
         font-family: 'Oswald', sans-serif;
 }
 
+.heading {
+        text-align: center;
+        justify-content: center;
+        font-size: 2rem;
+        margin-top: 10px;
+        background: linear-gradient(90deg, #ff8a00, #e52e71);
+        font-family: 'Times New Roman', Times, serif;
+}
+
+.image {
+        height: 20%;
+        width: 20%;
+        margin: 10px;
+}
+
 .card {
-        width: 18%;
-        height: 300px;
+        width: 450px;
+        height: 250px;
         margin: 0 0.5em;
         float: left;
         perspective: 500px;
@@ -33,51 +48,38 @@ body {
         transition: transform 0.5s;
 }
 
-.myth,
-.fact {
+.diseases,
+.remedy {
         position: absolute;
         height: 100%;
         width: 100%;
         background: white;
         line-height: 45px;
-
-        background: linear-gradient(to right, #8e0e00, #1f1c18);
-=======
-        background-color: #B31B1B;
-
-        font-size: 20px;
+        /* background: #0f0c29; */
+        background: linear-gradient(to right, #c31432, #240b36);
+        font-size: 22px;
         border-radius: 5px;
         backface-visibility: hidden;
 }
 
-.fact {
-
-        background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(14, 174, 87, 1) 0%, rgba(12, 116, 117, 1) 90%);
-=======
-        background-color: #32CD32;
-
+.remedy {
+        background: linear-gradient(to right, #642b73, #c6426e);
         color: white;
         transform: rotateY(180deg);
         line-height: 45px;
 }
 
-footer {
-        text-align: center;
-        font-family: 'Playfair Display', serif;
+.sect {
+        margin-left: 100px;
+}
+
+#underline {
+        font-size: 25px;
+        font-family: 'Raleway', sans-serif;
         font-weight: bold;
 }
 
-.heading {
-        text-align: center;
-        justify-content: center;
-        font-size: 2rem;
-        margin-top: 10px;
-        background: linear-gradient(90deg, #ff8a00, #e52e71);
-        font-family: 'Times New Roman', Times, serif;
-}
-
-.image {
-        height: 20%;
-        width: 20%;
-        margin: 10px;
+.image1 {
+        height: 15%;
+        width: 15%;
 }
