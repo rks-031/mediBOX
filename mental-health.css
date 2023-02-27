@@ -40,14 +40,22 @@ body {
         width: 100%;
         background: white;
         line-height: 45px;
+
         background: linear-gradient(to right, #8e0e00, #1f1c18);
+=======
+        background-color: #B31B1B;
+
         font-size: 20px;
         border-radius: 5px;
         backface-visibility: hidden;
 }
 
 .fact {
+
         background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(14, 174, 87, 1) 0%, rgba(12, 116, 117, 1) 90%);
+=======
+        background-color: #32CD32;
+
         color: white;
         transform: rotateY(180deg);
         line-height: 45px;
