@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+        padding: 0;
+        margin: 0;
+        background-color: #17141d;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+}
+
+.heading {
+        text-align: center;
+        justify-content: center;
+        font-size: 2rem;
+        margin-top: 10px;
+        background: linear-gradient(90deg, #ff8a00, #e52e71);
+        font-family: 'Times New Roman', Times, serif;
+}
+
+.image {
+        height: 20%;
+        width: 20%;
+        margin: 10px;
+}
+
+.card {
+        width: 450px;
+        height: 250px;
+        margin: 0 0.5em;
+        float: left;
+        perspective: 500px;
+}
+
+.content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        text-align: center;
+        justify-content: center;
+
+}
+
+.card:hover .content {
+        transform: rotateY(180deg);
+        transition: transform 0.5s;
+}
+
+.diseases,
+.remedy {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: white;
+        line-height: 45px;
+        /* background: #0f0c29; */
+        background: linear-gradient(to right, #c31432, #240b36);
+        font-size: 22px;
+        border-radius: 5px;
+        backface-visibility: hidden;
+}
+
+.remedy {
+        background: linear-gradient(to right, #642b73, #c6426e);
+        color: white;
+        transform: rotateY(180deg);
+        line-height: 45px;
+}
+
+.sect {
+        margin-left: 100px;
+}
+
+#underline {
+        font-size: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+}
+
+.image1 {
+        height: 15%;
+        width: 15%;
+}
