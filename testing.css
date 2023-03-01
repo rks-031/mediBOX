@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
+body {
+        padding: 0;
+        margin: 0;
+        background-color: #17141d;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+}
+
+footer {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+}
+
+.heading {
+        text-align: center;
+        justify-content: center;
+        font-size: 2rem;
+        margin-top: 10px;
+        background: linear-gradient(90deg, #ff8a00, #e52e71);
+        font-family: 'Times New Roman', Times, serif;
+}
+
+.image {
+        height: 25%;
+        width: 25%;
+        margin: 10px;
+}
+
+.box1 {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        font-size: 20px;
+}
+
+.box2 {
+        background: linear-gradient(to left, #000000, #0f9b0f);
+        font-size: 20px;
+}
