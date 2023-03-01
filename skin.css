@@ -69,8 +69,8 @@ footer {
 }
 
 .image {
-        height: 15%;
-        width: 15%;
+        height: 30%;
+        width: 30%;
         margin: 10px;
 }
 
@@ -85,3 +85,8 @@ footer {
         background: linear-gradient(to left, #000000, #0f9b0f);
         font-size: 20px;
 }
+
+/* .box:hover {
+        transform: rotateY(180deg);
+        transition: transform 0.5s;
+} */
