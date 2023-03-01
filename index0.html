@@ -94,19 +94,15 @@
 
                             
                   
-            <form class="d-flex">
-              <a class="nav-link " id="btnLogin-popup" href="index1.html">Login</a>
-                <input class="form-control mr-sm-2 me-2" type="search" placeholder="Enter your query" aria-label="Search" />
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
-                  Search
-                </button>
+            <form class="d-flex" id="loginbtn">
+              <a class="nav-link " id="btnLogin-popup" href="index1.html" onclick="hide()">Login</a>
             </form>      
         </nav>
 
 
-
+<div>
 <div class="container">
-    <p class="text-center font-weight-bold col-12 text-wrap font-medi">mediBOX</p>
+    <p class="text-center font-weight-bold col-12 text-wrap font-medi" id="heading">mediBOX</p>
     <img src="images/android-icon-192x192.png" class="rounded mx-auto d-block" />
     <p class="font-virtual">Your own Personalized Virtual Hospital</p>
     <hr>
@@ -127,23 +123,92 @@
       </div>
     </div>
     <hr>
-    <!-- middle text ends here -->
-  
-    <!-- skills used  -->
-    <p class="text-center font-weight-bold skill">Skills Used</p>
-    <div class="d-flex align-items-center justify-content-center">
-    <img src="logos/icons8-html-5-144.png" class="img-fluid">(HTML)
-    <img src="logos/css3.png" class="img-fluid">(CSS)
-    <img src="logos/icons8-javascript-144.png" class="img-fluid">(JavaScript)
-    <img src="logos/icons8-python-144.png" class="img-fluid">(Python)
-    </div>
-    <hr>
     
-    <!-- footer -->
-    <footer class="footer">&copy; mediBOX.com | All rights reserved.</footer>
-    <hr>
-  </div>
 
+
+  <p class="text-center font-weight-normal ">
+    <button class="explore">Explore the Vitals</button></p>
+  <br>
+  <div class="d-flex align-items-center justify-content-center ">
+  <figure class="figure">
+    <img src="logos/icons8-fit-50.png" class="img-fluid mx-xl-5 explore-item">
+    <figcaption class="text-center my-2 ">
+      <a href="fitness.htm" class="figcaption-text" style="font-size: 1vw;">Fitness</a>
+      </figcaption> 
+  </figure>
+  <figure class="figure">
+    <img src="logos/icons8-mental-health-64.png" class="img-fluid mx-xl-5 explore-item">
+    <figcaption class="text-center my-2 ">
+      <a href="mental-health.htm" class="figcaption-text" style="font-size: 1vw;">Mental Health</a>
+    </figcaption>
+  </figure>
+  <figure class="figure">
+    <img src="logos/icons8-nutrition-60.png" class="img-fluid mx-xl-5 explore-item">
+    <figcaption class="text-center my-2 ">
+      <a href="nutrition.html" class="figcaption-text" style="font-size: 1vw;">Nutrition</a>
+    </figcaption>
+  </figure>
+  <figure class="figure">
+    <img src="logos/icons8-pregnancy-64.png" class="img-fluid mx-xl-5 explore-item">
+    <figcaption class="text-center my-2 ">
+      <a href="women.html" class="figcaption-text" style="font-size: 1vw;">Women Health</a>
+      </figcaption>
+  </figure>
+</div>
+  <hr>
+  <!-- explore region ends here -->
+  
+  <!-- skills used  -->
+  <p class="text-center font-weight-normal ">
+    <button class="explore">Skills Used</button></p>
+
+  <div class="d-flex align-items-center justify-content-center ">
+  <figure class="figure">
+  <img src="logos/icons8-html-5-144.png" class="img-fluid mx-xl-4">
+  <figcaption class="text-center">HTML</figcaption></figure>
+
+  <figure class="figure">
+  <img src="logos/css3.png" class="img-fluid mx-xl-4">
+  <figcaption class="text-center">CSS</figcaption></figure>
+
+  <figure class="figure">
+  <img src="logos/icons8-javascript-144.png" class="img-fluid mx-xl-4">
+  <figcaption class="text-center">Javascript</figcaption></figure>
+
+  <figure class="figure">
+  <img src="logos/icons8-python-144.png" class="img-fluid mx-xl-4">
+  <figcaption class="text-center">Python</figcaption></figure>
+
+  <figure class="figure">
+  <img src="logos/icons8-flask-144.png" class="img-fluid mx-xl-4">
+  <figcaption class="text-center">Flask</figcaption></figure>
+  </div>
+  <hr>
+  <!-- skills used end -->
+  <p class="text-center font-weight-normal ">
+    <a href="#" class="explore-feedback">Feedback</a></p>
+  <hr>
+
+  <!-- footer -->
+  <footer class="footer">&copy; mediBOX.com | All rights reserved.</footer>
+  <hr>
+</div>
+  <!-- footer ends -->
+  <img src="" class="background-img">
+  
+
+<div class="body1">
+    <nav class="circular-menu">
+        <input class="circular-menu__button" id="circular-menu" type="checkbox" href="javascript: void 0" checked="checked"/>
+        <label class="circular-menu__icon" for="circular-menu">
+          <div class="hamburger hamburger-bar"></div>
+          <div class="hamburger hamburger-bar"></div>
+          <div class="hamburger hamburger-bar"></div>
+        </label><a class="circular-menu__item" href="#"><img class="imgbtn" src="logos\heart.png" title="Heart"></a><a class="circular-menu__item" href="#"><img class="imgbtn" src="logos\tumor.png" title="Cancer"></a><a class="circular-menu__item" href="#"><img class="imgbtn" src="logos/disease.png" title="Diseases"></a>
+    </nav>
+</div>
+</div>
+  
 
 
   <script src="db.js"></script>
